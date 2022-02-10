@@ -8,10 +8,7 @@ document.getElementById('login-button').addEventListener('click', function () {
     const userPassword = 'taposhpaul';
     // checked Email and password in login 
     if (emamiFild == userEmail && passwordFild == userPassword) {
-        console.log('welcome to bpb banking');
-    }
-    else {
-        console.log('pleace enter coruct informeson');
+        window.location.href = 'banking.html';
     }
 
 })
