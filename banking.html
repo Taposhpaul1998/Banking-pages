@@ -15,22 +15,51 @@
                 Mony</span>
         </h2>
     </header>
-    <section class="mt-8">
-        <div class="grid grid-cols-3 gap-4 w-3/4 mx-6 mx-auto text-white">
-            <div class="bg-blue-300 p-8 rounded">
-                <h3 class="text-2xl font-semibold mt-2"> Deposit</h3>
-                <h3 class="text-3xl font-semibold"> $<span>00</span></h3>
+    <main class="w-3/4 mx-6 mx-auto">
+        <!-- Balance and trangecson -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4   text-white">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h3 class="text-2xl font-semibold mt-2"> Deposit</h3>
+                    <h3 class="text-3xl font-semibold"> $<span id="totleDeposite">00</span></h3>
+                </div>
+                <div class="bg-orange-300 p-8 rounded">
+                    <h3 class="text-2xl font-semibold mt-2"> Withdraw</h3>
+                    <h3 class="text-3xl font-semibold"> $<span id="totleWithdraw">00</span></h3>
+                </div>
+                <div class="bg-lime-300 p-8 rounded">
+                    <h3 class="text-2xl font-semibold mt-2 "> Balance</h3>
+                    <h3 class="text-3xl font-semibold"> $<span id="totleBalance">1200</span></h3>
+                </div>
             </div>
-            <div class="bg-orange-300 p-8 rounded">
-                <h3 class="text-2xl font-semibold mt-2"> Withdraw</h3>
-                <h3 class="text-3xl font-semibold"> $<span>00</span></h3>
+        </section>
+        <!-- Deposit and Withdraw  -->
+        <section class="mt-4">
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Deposit Naw -->
+                <div class="bg-orange-200 rounded p-8">
+                    <h3 class="text-2xl font-semibold text-gray-500">Deposit Naw</h3>
+                    <div class="mt-6">
+                        <input id="deposit-amaount" class="border block mb-4 px-2 w-2/4 border-grey-400 rounded"
+                            type="text" placeholder="$ amaount deposit">
+                        <button id="deposit-button"
+                            class="bg-amber-400 px-6 py-2 rounded text-bold text-white">Deposit</button>
+                    </div>
+                </div>
+                <!-- Withdraw Naw -->
+                <div class="bg-red-300 rounded p-8">
+                    <h3 class="text-2xl font-semibold text-gray-500">Withdraw Naw</h3>
+                    <div class="mt-6">
+                        <input id="Withdraw-amaount" class="border block mb-4 px-2 w-2/4 border-grey-400 rounded"
+                            type="text" placeholder="$ amaount Withdraw">
+                        <button id="Withdraw-button"
+                            class="bg-amber-400 px-6 py-2 rounded text-bold text-white">Withdraw</button>
+                    </div>
+                </div>
             </div>
-            <div class="bg-gren-300 p-8 rounded">
-                <h3 class="text-2xl font-semibold mt-2"> Balance</h3>
-                <h3 class="text-3xl font-semibold"> $<span>00</span></h3>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
 </body>
 
 </html>
